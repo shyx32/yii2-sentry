@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace notamedia\sentry;
+namespace shyx32\sentry;
 
 use Sentry\ClientBuilder;
 use Sentry\Event;
