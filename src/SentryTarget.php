@@ -111,7 +111,7 @@ class SentryTarget extends Target
                 /** @var User $user */
                 $user = Yii::$app->has('user', true) ? Yii::$app->get('user', false) : null;
                 if ($user && ($identity = $user->getIdentity(false))) {
-                    $data['userData']['id'] = $identity->getId();
+                    $data['userData']['id'] = (string)$identity->getId();
                 }
             } catch (Throwable $e) {}
 
